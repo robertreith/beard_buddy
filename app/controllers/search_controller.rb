@@ -3,7 +3,9 @@ get '/search/new' do
 end
 
 post '/search' do
-  @search = YELP_CLIENT(params[:postal_code], limit: params[:limit], term: params[:term])
-    binding.pry
-    erb :'results'
+
+  @results = YELP_CLIENT.search(params[:postal_code], limit: params[:limit], term: params[:term])
+
+    erb :'search/results'
+
 end
