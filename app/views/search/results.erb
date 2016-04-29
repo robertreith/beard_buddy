@@ -1,1 +1,14 @@
-results page
+
+<ul>
+
+<% @results.businesses.each do |bus| %>
+	<div>
+	Name: <%= bus.name %><br>
+	Address: <%= bus.location.address.first %><br>
+	Phone: <%= bus.display_phone[3..-1] %><br>
+	Rating: <%= bus.rating %><br>
+	Review: <%= bus.snippet_text %><br><br>
+
+	</div>
+<% end %>
+</ul>
