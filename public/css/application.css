@@ -1,0 +1,26 @@
+body {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+
+.name {
+	font-size: 25px;
+}
+
+.review {
+	font-size: 15px;
+
+}
+
+.search {
+	text-decoration: none;
+	color: #000;
+}
