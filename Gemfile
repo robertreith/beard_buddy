@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # PostgreSQL driver
 gem 'pg'
 gem 'pry'
-gem 'yelp'
+gem 'yelp', require: 'yelp'
 
 # Sinatra driver
 gem 'sinatra'
